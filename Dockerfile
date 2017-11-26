@@ -31,3 +31,4 @@ ENTRYPOINT /home/tomcat/bin/startup.sh && tail -f /home/tomcat/logs/catalina.out
 # 创建容器启动tomcat
 CMD ["/home/tomcat/bin/startup.sh","run"]
 
+
