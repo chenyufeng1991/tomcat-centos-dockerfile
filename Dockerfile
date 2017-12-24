@@ -1,4 +1,4 @@
-FROM centos:6.8
+FROM centos:6
 MAINTAINER chenyufeng "yufengcode@gmail.com"
 
 # 设置当前工具目录
@@ -11,7 +11,7 @@ RUN yum install -y wget && \
     yum install -y tar && \
     wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz && \
     tar -xvzf jdk-8u131-linux-x64.tar.gz && \
-    wget http://mirrors.shuosc.org/apache/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz && \
+    wget http://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.0.48/bin/apache-tomcat-8.0.48.tar.gz && \
     tar -xvzf apache-tomcat-8.0.47.tar.gz && \ 
     mv apache-tomcat-8.0.47/ tomcat && \
     rm -f jdk-8u131-linux-x64.tar.gz && \
