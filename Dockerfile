@@ -12,10 +12,10 @@ RUN yum install -y wget && \
     wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz && \
     tar -xvzf jdk-8u131-linux-x64.tar.gz && \
     wget http://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.0.48/bin/apache-tomcat-8.0.48.tar.gz && \
-    tar -xvzf apache-tomcat-8.0.47.tar.gz && \ 
-    mv apache-tomcat-8.0.47/ tomcat && \
+    tar -xvzf apache-tomcat-8.0.48.tar.gz && \ 
+    mv apache-tomcat-8.0.48/ tomcat && \
     rm -f jdk-8u131-linux-x64.tar.gz && \
-    rm -f apache-tomcat-8.0.47.tar.gz && \    
+    rm -f apache-tomcat-8.0.48.tar.gz && \    
     yum clean all
 
 # 设置环境变量
