@@ -25,6 +25,7 @@ ENV JAVA_HOME /home/jdk1.8.0_162
 ENV CATALINA_HOME /home/tomcat
 ENV PATH $PATH:$JAVA_HOME/bin:$CATALINA_HOME/bin
 ENV TZ Asia/Shanghai
+ENV LANG C.UTF-8
 
 # 暴露tomcat 8080端口
 EXPOSE 8080
